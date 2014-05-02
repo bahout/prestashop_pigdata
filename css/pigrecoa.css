@@ -1,0 +1,206 @@
+#mctsa {
+    width: auto;
+    height: auto;
+    /*padding:36px 20px;*/
+    /*border: 1px solid #dedcb4;*/
+    /* background:#f2f1ea url(img/loading.gif) no-repeat 50% 50%;*/
+    /*box-shadow: 0px 1px 11px #CCCCCC;*/
+    margin-left: 50px;
+    margin-right: 50px;
+    /* Do not alter the below settings*/
+    white-space: nowrap;
+    position: relative;
+    font-size: 0px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+#mctsa>* {
+    display: inline-block;
+}
+
+/*-------- div.item is each thumbnail's wrapper created by the javascript ------*/
+#mctsa div.item {
+    /*padding:0px;
+    margin-right:6px;*/
+    /* this specifies the distance between each thumbnail */
+    /*background-color:#000000;*/
+    /*border:1px solid #ddd;*/
+    /*text-align:center;*/
+    /*position:relative;*/
+    padding: 0 2px;
+}
+
+#mctsa img {
+    border: none;
+}
+
+/*---------built-in navigation buttons-------*/
+#mctsa .navPrev, #mctsa .navNext, #mctsa .navPlay, #mctsa .navPause {
+    width: 16px;
+    height: 22px;
+    position: absolute;
+    background: url(../img/navbuttons.png);
+    display: inline-block;
+    z-index: 5;
+    cursor: pointer;
+}
+
+#mctsa .navPrev {
+    background-position: 0 -22px;
+    top: 60px;
+    left: -40px;
+}
+
+#mctsa .navPrev:hover {
+    background-position: 0 -44px;
+}
+
+#mctsa .navPrevDisabled, #mctsa .navPrevDisabled:hover {
+    background-position: 0 0;
+    cursor: default;
+}
+
+#mctsa .navNext {
+    background-position: -16px -22px;
+    top: 60px;
+    right: -40px;
+}
+
+#mctsa .navNext:hover {
+    background-position: -16px -44px;
+}
+
+#mctsa .navNextDisabled, #mctsa .navNextDisabled:hover {
+    background-position: -16px 0;
+    cursor: default;
+}
+
+#mctsa .navPause, #mctsa .navPlay {
+    /*left: 360px;
+    top: 130px;*/
+    display: none;
+}
+
+#mctsa .navPause {
+    background-position: 0 -66px;
+}
+
+#mctsa .navPause:hover {
+    background-position: 0 -88px;
+}
+
+#mctsa .navPlay {
+    background-position: -16px -66px;
+}
+
+#mctsa .navPlay:hover {
+    background-position: -16px -88px;
+}
+
+.navPrev, .navPlay, .navPause, .navNext {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+/*---------built-in navigation bullets--------*/
+/* Note: the navBullets won't be available when "scrollByEachThumb" was set to false in the Javascript.*/
+#mctsa .navBullets {
+    display: none;
+}
+
+/* --------- Others ------- */
+#mctsa {
+    transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+.pigrecoa-item-image-support a {
+    display: block;
+  /*  width: 137px;*/
+}
+
+.pigrecoa-item-image-support a img{
+    /*width: auto;*/
+}
+
+.pigrecoa-item-name {
+    /*width: 133px;*/
+    min-height: 0px;
+    height: 30px;
+    padding: 2px 9px;
+    overflow: hidden;
+    margin-left: 0px;
+    margin-top: 2px;
+    border-bottom: 0;
+    text-align: justify;
+}
+
+.pigrecoa-item-name a {
+    display: block;
+    /*font-size: 12px;*/
+    font-variant: normal;
+    overflow: hidden;
+    font-weight: bold;
+    color: #202020;
+    white-space: pre-wrap;
+    text-transform: none;
+    height: 30px;
+}
+
+.pigrecoa-message {
+    /*color: #FA862B;*/
+    /*font-size: 15px;*/
+    text-align: left;
+    padding: 6px 4px;
+}
+
+.pigrecoa-item-prices
+{
+    clear:both;
+    overflow:hidden;
+    margin-top:2px;
+    margin-left:2px;
+}
+
+.pigrecoa-item-sale-price {
+    float:left;
+    /*font-size:15px;*/
+    font-weight:bold;
+    /*color:#F974A6;*/
+}
+
+.pigrecoa-item-price-discount
+{
+    float:right;
+    /*font-size:13px;*/
+    font-weight:normal;
+    text-decoration:line-through;
+    margin-right:16px;
+    /*color:#AFAFAF;*/
+}
+
+
+.pigrecoa-item-image-support-col
+{
+    float:left;
+    margin-right:10px;
+}
+
+.pigrecoa-item-prices-col
+{
+    float:right;
+    margin-top:10px;
+}
+
+.pigrecoa-item-name-col {
+    text-transform:uppercase;
+    font-size:10px;
+    width: 130px;
+}

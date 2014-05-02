@@ -1,0 +1,245 @@
+/*****fonts*****/
+@font-face {
+    font-family: "UniversLT-UltraCondensed";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../class/Univers%20LT%2059%20Ultra%20Condensed.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "TheanoDidotRegular";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../class/TheanoDidot-Regular.ttf") format("truetype");
+}
+/*****end fonts*****/
+
+#mctsb {
+    width: auto;/*745*/
+    height: auto;
+    /*padding:36px 20px;*/
+    /*border: 1px solid #dedcb4;*/
+    /* background:#f2f1ea url(img/loading.gif) no-repeat 50% 50%;*/
+    /*box-shadow: 0px 1px 11px #CCCCCC;*/
+    margin-left: 50px;
+    margin-right: 50px;
+    /* Do not alter the below settings*/
+    white-space: normal;
+    position: relative;
+    font-size: 0px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    /*border: solid 1px orange;*/
+}
+
+#mctsb>* {
+    display: none;
+}
+
+/*-------- div.item is each thumbnail's wrapper created by the javascript ------*/
+#mctsb div.item {
+    /*padding:0px;
+    margin-right:6px;*/
+    /* this specifies the distance between each thumbnail */
+    /*background-color:#000000;*/
+    /*border:1px solid #ddd;*/
+    /*text-align:center;*/
+    /*position:relative;*/
+    padding: 0 2px;
+}
+
+#mctsb img {
+    border: none;
+}
+
+/*---------built-in navigation buttons-------*/
+#mctsb .navPrev, #mctsb .navNext, #mctsb .navPlay, #mctsb .navPause {
+    width: 16px;
+    height: 22px;
+    position: absolute;
+    background: url(../img/navbuttons.png);
+    display: inline-block;
+    z-index: 5;
+    cursor: pointer;
+}
+
+#mctsb .navPrev {
+    background-position: 0 -22px;
+    top: 60px;
+    left: -40px;
+}
+
+#mctsb .navPrev:hover {
+    background-position: 0 -44px;
+}
+
+#mctsb .navPrevDisabled, #mctsb .navPrevDisabled:hover {
+    background-position: 0 0;
+    cursor: default;
+}
+
+#mctsb .navNext {
+    background-position: -16px -22px;
+    top: 60px;
+    right: -40px;
+}
+
+#mctsb .navNext:hover {
+    background-position: -16px -44px;
+}
+
+#mctsb .navNextDisabled, #mctsb .navNextDisabled:hover {
+    background-position: -16px 0;
+    cursor: default;
+}
+
+#mctsb .navPause, #mctsb .navPlay {
+    /*left: 360px;
+    top: 130px;*/
+    display: none;
+}
+
+#mctsb .navPause {
+    background-position: 0 -66px;
+}
+
+#mctsb .navPause:hover {
+    background-position: 0 -88px;
+}
+
+#mctsb .navPlay {
+    background-position: -16px -66px;
+}
+
+#mctsb .navPlay:hover {
+    background-position: -16px -88px;
+}
+
+.navPrev, .navPlay, .navPause, .navNext {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+/*---------built-in navigation bullets--------*/
+/* Note: the navBullets won't be available when "scrollByEachThumb" was set to false in the Javascript.*/
+#mctsb .navBullets {
+    display: none;
+}
+
+/* --------- Others ------- */
+#mctsb {
+    transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+}
+/*----- end slider -----*/
+
+.pigrecob-item-image-support {
+    display: block;
+    position: relative;
+    height: 345px;
+    width: auto;
+    /*border: solid 1px green;*/
+}
+
+.pigrecob-item-image-support a {
+    display: block;
+}
+
+.pigrecob-item-image-support a img{
+    width: auto;
+}
+
+.pigrecob-item-name {
+    display: inline-block;
+    padding: 2px 9px;
+    overflow: hidden;
+    margin-left: 0px;
+    margin-top: 2px;
+    border-bottom: 0;
+    text-align: justify;
+    width: 345px;
+}
+
+.pigrecob-item-name a {
+    color: #928467;
+    display: block;
+    text-decoration: none;
+    font-family: 'UniversLT-UltraCondensed',Arial;
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    margin: 0;
+    padding-left: 18px;
+    text-transform: uppercase;
+    max-height: 35px;
+    /*border: 1px cyan solid;*/
+}
+
+.pigrecob-message {
+    color: #181818;
+    text-align: left;
+    background:url("../img/fleche.gif") no-repeat scroll 0 center transparent;
+    display: inline-block;
+    font-family: 'UniversLT-UltraCondensed',Arial;
+    font-size: 32px;
+    font-weight: normal;
+    margin: 0 0 20px;
+    padding: 0 0 0 25px;
+}
+
+.pigrecob-item-prices
+{
+    clear:both;
+    overflow:hidden;
+    margin-top:2px;
+    margin-left:2px;
+}
+
+.pigrecob-item-sale-price {
+    display: inline-block;
+    font-family: 'TheanoDidotRegular',Arial;
+    font-size: 26px;
+    font-style: italic;
+    letter-spacing: -2px;
+    padding: 0 0 5px 18px;
+    text-align: left;
+    color: #2E2E2E;
+    margin-right: 10px;
+    /*border: solid red 1px;*/
+}
+
+.pigrecob-item-price-discount {
+    display: inline-block;
+    font-family: 'TheanoDidotRegular',Arial;
+    font-size: 20px;
+    font-style: italic;
+    letter-spacing: -2px;
+    margin-left: 2px;
+    text-align: left;
+    color: #2e2e2e;
+    text-decoration: line-through;
+    /*border: solid red 1px;*/
+}
+
+
+.pigrecob-item-summary {
+    background: none repeat scroll 0 0 /*#181818*/;
+    height: 55px;
+    margin: 1px 0 0;
+    overflow: hidden;
+    padding: 12px;
+    width: auto;
+    max-width: 195px;
+    /*border: solid 1px yellow;*/
+}
+
+.pigrecob-item {
+    margin: 0 15px 0 15px;
+    /*border: 1px solid green;*/
+}
